@@ -127,7 +127,7 @@ function initCTATracking() {
             
             // LINE URLに遷移（実際のLINE URLに変更する必要があります）
             setTimeout(() => {
-                // window.location.href = 'https://line.me/R/ti/p/YOUR_LINE_ID';
+                window.location.href = 'https://lin.ee/6aEeWAd';
                 showLineModal();
             }, 300);
         });
@@ -189,8 +189,8 @@ function initLINEButtons() {
         if (button.textContent.includes('LINE')) {
             button.addEventListener('click', function(e) {
                 e.preventDefault();
-                // 実際のLINE URLに変更する必要があります
-                // window.location.href = 'https://line.me/R/ti/p/YOUR_LINE_ID';
+                // LINE URL
+                window.location.href = 'https://lin.ee/6aEeWAd';
                 showLineModal();
             });
         }
