@@ -5,6 +5,17 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* ヒーローセクション内の要素の初期状態 */
+.hero-section > div > * {
+    opacity: 1 !important; /* アニメーションを無効化 */
+}
+
+/* または、特定の要素だけ除外 */
+.hero-section .sub-copy {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
 /* スムーズスクロール */
 html {
     scroll-behavior: smooth;
