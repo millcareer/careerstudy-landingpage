@@ -151,7 +151,7 @@ function showLineModal() {
                     友だち追加で就活対策を始めましょう！
                 </p>
                 <div class="space-y-3">
-                    <button class="w-full bg-green-500 text-white font-bold py-3 px-6 rounded-full hover:bg-green-600 transition">
+                    <button onclick="window.location.href='https://lin.ee/6aEeWAd'" class="w-full bg-green-500 text-white font-bold py-3 px-6 rounded-full hover:bg-green-600 transition">
                         <i class="fab fa-line mr-2"></i>
                         LINEで登録する
                     </button>
