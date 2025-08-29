@@ -127,7 +127,7 @@ function initCTATracking() {
             
             // LINE URLに遷移（実際のLINE URLに変更する必要があります）
             setTimeout(() => {
-                window.location.href = 'https://lin.ee/6aEeWAd';
+                //window.location.href = 'https://lin.ee/6aEeWAd';
                 showLineModal();
             }, 300);
         });
@@ -190,7 +190,7 @@ function initLINEButtons() {
             button.addEventListener('click', function(e) {
                 e.preventDefault();
                 // LINE URL
-                window.location.href = 'https://lin.ee/6aEeWAd';
+                //window.location.href = 'https://lin.ee/6aEeWAd';
                 showLineModal();
             });
         }
