@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャリアスタディ｜体育会系学生のための就活練習場</title>
+    <meta name="description" content="部活しかしてない、高学歴でもない。それでも大手内定は可能。体育会系学生向けの実践型就活サポート">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="キャリアスタディ｜体育会系学生のための就活練習場">
+    <meta property="og:description" content="部活しかしてない、高学歴でもない。それでも大手内定は可能。">
+    <meta property="og:type" content="website">
+</head>
+<body class="font-noto bg-white">
+    
+    <!-- ヒーローセクション -->
+    <section class="hero-section relative bg-gradient-to-b from-gray-50 to-white pb-16 pt-8 overflow-hidden">
+        <div class="container mx-auto px-4 max-w-lg">
+            
+            <!-- 対比写真 -->
+            <div class="photo-comparison mb-8 relative">
+                <div class="relative w-full max-w-md mx-auto">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/0a7b28d676cb8e162d4f29c04c9457fc" 
+                         alt="部活から就活への変化" 
+                         class="w-full rounded-2xl shadow-xl">
+                </div>
+            </div>
+            
+            <!-- メインコピー -->
+            <div class="text-center mb-8">
+                <div class="sub-copy bg-red-50 border-2 border-red-400 p-6 rounded-lg text-center mb-6 mt-8 shadow-lg">
+                    <p class="text-base md:text-lg font-black text-red-700">
+                        <i class="fas fa-exclamation-triangle text-red-600 text-2xl mb-2"></i><br>
+                        【2025年9月時点】<br>
+                        <span class="text-2xl">インターン参加平均は<span class="text-red-600 text-3xl">6社</span></span><br>
+                        <span class="text-lg bg-yellow-300 px-3 py-1 inline-block mt-2 rounded">「まだ何も出来てない」</span><br>
+                        <span class="text-lg bg-yellow-300 px-3 py-1 inline-block mt-1 rounded">「インターン参加５社以下」</span><br>
+                        <span class="text-xl text-red-700 font-black mt-2 inline-block">は危険</span>
+                    </p>
+                </div>
+                
+                <!-- CTAボタン -->
+                <div class="cta-area">
+                    <a href="#" class="cta-button inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transform transition hover:scale-105 w-full max-w-sm">
+                        <i class="fab fa-line mr-2"></i>
+                        今すぐLINEで登録（無料）
+                    </a>
+                    <div class="trust-points flex justify-center gap-6 mt-4 text-xs text-gray-600">
+                        <span><i class="fas fa-check-circle text-green-500"></i> 登録2分</span>
+                        <span><i class="fas fa-check-circle text-green-500"></i> 参加費無料</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 不安共感セクション -->
+    <section class="anxiety-section py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-lg">
+            <h2 class="section-title text-2xl md:text-3xl font-black text-center mb-12">
+                体育会だからこそ抱える<br>
+                <span class="text-green-600">就活の不安</span>
+            </h2>
+            
+            <div class="anxiety-items space-y-4">
+                <div class="anxiety-item bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                    <div class="flex items-start gap-4">
+                        <div class="icon-wrapper bg-blue-100 rounded-full p-3">
+                            <i class="fas fa-comment-dots text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-bold text-gray-800 text-lg mb-2">「就活で話せることがない」</p>
+                            <p class="text-sm text-gray-600">部活の話だけじゃ弱いって聞くし...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="anxiety-item bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                    <div class="flex items-start gap-4">
+                        <div class="icon-wrapper bg-purple-100 rounded-full p-3">
+                            <i class="fas fa-graduation-cap text-purple-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-bold text-gray-800 text-lg mb-2">「学歴ないと無理でしょ」</p>
+                            <p class="text-sm text-gray-600">選考に行くと東大、早慶だらけで圧倒される…</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="anxiety-item bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                    <div class="flex items-start gap-4">
+                        <div class="icon-wrapper bg-pink-100 rounded-full p-3">
+                            <i class="fas fa-users text-pink-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-bold text-gray-800 text-lg mb-2">「体育会＝コミュ力って思われがちだけど」</p>
+                            <p class="text-sm text-gray-600">実は人見知りだし、GD・面接が不安...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 教育セクション（気づき） -->
+    <section class="education-section py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-lg">
+            <h2 class="section-title text-2xl md:text-3xl font-black text-center mb-12">
+                就活もスポーツと同じ。<br>
+                <span class="text-green-600">"練習量"で差がつく</span>
+            </h2>
+            
+            <div class="education-content bg-gradient-to-br from-blue-50 to-white rounded-3xl p-8 shadow-lg border border-blue-100">
+                <p class="text-base md:text-lg font-bold text-gray-800 leading-relaxed mb-6">
+                    就活は<span class="text-green-600">"学歴"</span>や<span class="text-green-600">"センス"</span>だけで決まらない。<br>
+                    <span class="text-red-600 underline text-2xl font-black">圧倒的な練習量</span>を積んだ人が内定を勝ち取る。
+                </p>
+                <p class="text-sm md:text-base text-gray-400 leading-relaxed italic opacity-80">
+                    <span class="text-lg">📺</span> 練習をする前に、観客席で試合を<br>
+                    　見るだけで上手くなった人はいないはず。
+                </p>
+                
+                <!-- 成長サイクル図 -->
+                <div class="growth-cycle bg-white rounded-2xl p-6 shadow-inner">
+                    <div class="flex justify-around items-center">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-2">
+                                <i class="fas fa-book text-green-600 text-2xl"></i>
+                            </div>
+                            <p class="text-sm font-bold">学び</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-gray-400 text-xl"></i>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+                                <i class="fas fa-running text-blue-600 text-2xl"></i>
+                            </div>
+                            <p class="text-sm font-bold text-blue-600">練習</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-gray-400 text-xl"></i>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-2">
+                                <i class="fas fa-sync text-purple-600 text-2xl"></i>
+                            </div>
+                            <p class="text-sm font-bold">反省</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <p class="text-2xl font-black text-green-600">＝ 成長<span class="text-base">（第一志望内定）</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 提案セクション（解決策） -->
+    <section class="solution-section py-16 bg-gradient-to-b from-green-50 to-white">
+        <div class="container mx-auto px-4 max-w-lg">
+            <div class="text-center mb-4">
+                <span class="text-base text-gray-500 font-medium">体育会限定</span>
+                <p class="text-sm text-gray-600 font-bold mt-2 mb-3">
+                    圧倒的な効率×練習量 で鍛える、就活の合宿所
+                </p>
+                <div>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/34d5167aa00cd69523d475ed29eab426" 
+                         alt="キャリアスタディ" 
+                         class="h-20 mx-auto"
+                         style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+                </div>
+            </div>
+            
+            <div class="solution-features grid grid-cols-1 gap-4 mt-12">
+                <div class="feature-card bg-white rounded-2xl p-6 shadow-lg border-2 border-green-100">
+                    <div class="flex items-center gap-4">
+                        <div class="icon bg-green-100 rounded-full p-4">
+                            <i class="fas fa-building text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">1度に4社のインターン・選考経験</h3>
+                            <p class="text-sm text-gray-600">効率的に経験値を積める</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card bg-white rounded-2xl p-6 shadow-lg border-2 border-blue-100">
+                    <div class="flex items-center gap-4">
+                        <div class="icon bg-blue-100 rounded-full p-4">
+                            <i class="fas fa-user-tie text-blue-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">現役人事から直接フィードバック</h3>
+                            <p class="text-sm text-gray-600">５段階評価で明確なアドバイス</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card bg-white rounded-2xl p-6 shadow-lg border-2 border-purple-100">
+                    <div class="flex items-center gap-4">
+                        <div class="icon bg-purple-100 rounded-full p-4">
+                            <i class="fas fa-file-alt text-purple-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">就活対策シート配布</h3>
+                            <p class="text-sm text-gray-600">自己分析～選考対策まで完全網羅</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card bg-white rounded-2xl p-6 shadow-lg border-2 border-yellow-100">
+                    <div class="flex items-center gap-4">
+                        <div class="icon bg-yellow-100 rounded-full p-4">
+                            <i class="fas fa-crown text-yellow-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">特別選考あり</h3>
+                            <p class="text-sm text-gray-600">特別ルートで、最短内定を</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="text-center mt-8">
+                <a href="#" class="cta-button inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transform transition hover:scale-105 w-full max-w-sm">
+                    <i class="fab fa-line mr-2"></i>
+                    今すぐLINEで登録（無料）
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 実績セクション -->
+    <section class="results-section py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-lg">
+            <h2 class="section-title text-2xl md:text-3xl font-black text-center mb-12">
+                「出遅れ」「学歴なし」からでも<br>
+                <span class="text-green-600">逆転できた先輩たち</span>
+            </h2>
+            
+            <div class="success-stories space-y-6">
+                <div class="story-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="story-header flex items-start gap-4 mb-4">
+                        <div class="avatar bg-gradient-to-br from-blue-400 to-blue-600 rounded-full w-16 h-16 flex items-center justify-center text-white font-bold text-xl">
+                            A
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-bold text-lg mb-1">偏差値50以下の大学サッカー部から</p>
+                            <p class="text-green-600 font-black text-xl"><span class="text-red-600">"森永乳業"</span>と<span class="text-red-600">"伊藤ハム"</span>に逆転内定</p>
+                        </div>
+                    </div>
+                    <div class="story-detail">
+                        <img src="https://page.gensparksite.com/v1/base64_upload/33ddbc202f0ccc96d40cb9b01bf84a0a" 
+                             alt="内定者からのメッセージ" 
+                             class="w-full rounded-xl shadow-sm border border-gray-100">
+                    </div>
+                </div>
+                
+                <div class="story-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="story-header flex items-start gap-4 mb-4">
+                        <div class="avatar bg-gradient-to-br from-green-400 to-green-600 rounded-full w-16 h-16 flex items-center justify-center text-white font-bold text-xl">
+                            B
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-bold text-lg mb-1">9月まで就活ゼロのラグビー部も</p>
+                            <p class="text-green-600 font-black text-xl">倍率100倍以上。<span class="text-red-600">"ライオン"</span>に内定</p>
+                        </div>
+                    </div>
+                    <div class="story-detail bg-gray-50 rounded-xl p-4">
+                        <p class="text-sm text-gray-700">
+                            <i class="fas fa-quote-left text-gray-400 mr-2"></i>
+                            もう間に合わないと思ってたけど、諦めず、行動・相談して本当によかったです。
+                            <i class="fas fa-quote-right text-gray-400 ml-2"></i>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- LINE風のメッセージ -->
+                <div class="line-messages bg-green-50 rounded-2xl p-6">
+                    <p class="text-center font-bold mb-4 text-gray-700">
+                        <i class="fab fa-line text-green-500"></i> 内定報告が続々と届いています
+                    </p>
+                    <div class="messages space-y-4">
+                        <!-- 大手食品メーカー内定報告 -->
+                        <div class="message-image">
+                            <img src="https://page.gensparksite.com/v1/base64_upload/c33cc61dd9fbe36cd4deec206cffa798" 
+                                 alt="大手食品メーカー内定報告" 
+                                 class="w-full"
+                                 style="border-radius: 12px;">
+                        </div>
+                        
+                        <!-- 大手IT企業内定報告 -->
+                        <div class="message-image">
+                            <img src="https://page.gensparksite.com/v1/base64_upload/7e1c8cde17a069c7681daeb7b209c4be" 
+                                 alt="大手IT企業内定報告" 
+                                 class="w-full"
+                                 style="border-radius: 12px;">
+                        </div>
+                        
+                        <!-- 大手IT企業・大手化学メーカー内定報告 -->
+                        <div class="message-image">
+                            <img src="https://page.gensparksite.com/v1/base64_upload/e85df58ce404c46fafbb9eece4a7fb7f" 
+                                 alt="複数内定報告" 
+                                 class="w-full"
+                                 style="border-radius: 12px;">
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 約束セクション（なぜ可能か） -->
+    <section class="promise-section py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-lg">
+            <h2 class="section-title text-2xl md:text-3xl font-black text-center mb-12">
+                <span class="text-green-600">短期間で成長できる</span><br>
+                理由
+            </h2>
+            
+            <!-- 企業課題の実例画像 -->
+            <div class="company-examples mb-8 space-y-6">
+                <div class="bg-white rounded-2xl p-4 shadow-lg">
+                    <p class="text-center font-bold mb-4 text-gray-700">
+                        <i class="fas fa-building text-blue-600"></i> 実際の企業課題例
+                    </p>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/73abf48e72eb8bddbd16ec30207c49a9" 
+                         alt="企業課題の実例" 
+                         class="w-full rounded-xl shadow-sm border border-gray-100">
+                    <div class="mt-4 text-center">
+                        <p class="text-sm text-gray-600 font-bold">
+                            <span class="text-green-600 text-base">実際の企業課題を４回も挑戦できる</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 対策シートの実例画像 -->
+                <div class="bg-white rounded-2xl p-4 shadow-lg">
+                    <p class="text-center font-bold mb-4 text-gray-700">
+                        <i class="fas fa-file-alt text-purple-600"></i> 実際の対策シートの中身
+                    </p>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/b6ca48e3a3cf70fa29e81b065600d3e2" 
+                         alt="対策シートの実例" 
+                         class="w-full rounded-xl shadow-sm border border-gray-100 mb-4">
+                    <div class="grid grid-cols-2 gap-3 text-xs">
+                        <div class="bg-purple-50 rounded-lg p-3">
+                            <p class="font-bold text-purple-700 mb-1">📈 自分史グラフ</p>
+                            <p class="text-gray-600">人生の浮き沈みを可視化</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-lg p-3">
+                            <p class="font-bold text-blue-700 mb-1">📊 自分軸分析</p>
+                            <p class="text-gray-600">強み・価値観を明確化</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-3">
+                            <p class="font-bold text-green-700 mb-1">📋 選考対策</p>
+                            <p class="text-gray-600">ES・面接テンプレート</p>
+                        </div>
+                        <div class="bg-yellow-50 rounded-lg p-3">
+                            <p class="font-bold text-yellow-700 mb-1">🎯 業界分析</p>
+                            <p class="text-gray-600">志望業界の研究シート</p>
+                        </div>
+                    </div>
+                    <p class="text-center text-sm font-bold text-green-600 mt-4">
+                        「これだけあれば就活が進む！」完全版シート
+                    </p>
+                </div>
+                
+                <!-- 人事フィードバックの実例画像 -->
+                <div class="bg-white rounded-2xl p-4 shadow-lg">
+                    <p class="text-center font-bold mb-4 text-gray-700">
+                        <i class="fas fa-user-tie text-green-600"></i> 人事からの５段階評価フィードバック
+                    </p>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/8f465c967f4a25ad3f0289a9d6810997" 
+                         alt="人事フィードバックの実例" 
+                         class="w-full rounded-xl shadow-sm border border-gray-100">
+                    <div class="mt-4">
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <div class="bg-red-50 rounded-lg p-2 text-center">
+                                <p class="font-bold text-red-600">総合評価</p>
+                                <p class="text-sm text-gray-700">自分の実力が分かる</p>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-2 text-center">
+                                <p class="font-bold text-blue-600">評価コメント</p>
+                                <p class="text-gray-700">改善点が見つかる！</p>
+                            </div>
+                            <div class="bg-green-50 rounded-lg p-2 text-center">
+                                <p class="font-bold text-green-600">特別選考</p>
+                                <p class="text-gray-700 text-xs">最短ルートで<br>経験と内定GET!!</p>
+                            </div>
+                        </div>
+                        <p class="text-center text-sm text-gray-600 font-bold mt-3">
+                            <span class="text-green-600">評価が高ければ特別選考案内が届く！</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- LINE個別相談 -->
+            <div class="consultation-section bg-gradient-to-r from-green-50 to-white rounded-3xl p-6 shadow-xl mb-8 border-2 border-green-200">
+                <h3 class="text-xl font-black text-center mb-4">
+                    <i class="fab fa-line text-green-500"></i>
+                    LINEで個別相談自由
+                </h3>
+                <img src="https://page.gensparksite.com/v1/base64_upload/c650811cc592f015342763e209ca67f8" 
+                     alt="個別相談サポート" 
+                     class="w-full"
+                     style="border-radius: 12px;">
+                <p class="text-center text-sm text-gray-700 font-bold mt-4">
+                    電通出身、国家資格キャリアコンサルタントからの<br>
+                    個別アドバイス
+                </p>
+            </div>
+            
+            <!-- 難関企業内定実績 -->
+            <div class="achievement-section bg-white rounded-3xl p-6 shadow-xl mb-8 border border-gray-100">
+                <h3 class="text-xl font-black text-center mb-4">
+                    <i class="fas fa-trophy text-yellow-500"></i>
+                    難関企業の内定実績多数
+                </h3>
+                <p class="text-center text-sm text-gray-600 mb-4">
+                    外資コンサル、日系大手企業など難関企業への内定続々<br>
+                    <span class="text-xs">※一部抜粋 2025年8月時点</span>
+                </p>
+                <div>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/e91406100a98beaefd944334dca88c54" 
+                         alt="内定企業一覧" 
+                         class="w-full"
+                         style="border-radius: 12px;">
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-sm font-bold text-green-600">
+                        体育会系学生が続々と難関企業へ内定獲得中！
+                    </p>
+                </div>
+            </div>
+            
+            <div class="guarantee-box bg-green-50 rounded-2xl p-6 mt-8 border-2 border-green-200">
+                <p class="text-center font-bold text-green-800">
+                    <i class="fas fa-shield-alt text-green-600 mr-2"></i>
+                    体育会で培った「やり抜く力」に「練習量」が加われば<br>
+                    必ず結果はついてくる
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- オファーセクション -->
+    <section class="offer-section py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4 max-w-lg">
+            <h2 class="section-title text-2xl md:text-3xl font-black text-center mb-12">
+                <span class="text-red-600">めんどくさいのは皆同じ</span><br>
+                <span class="text-green-600 text-3xl">一歩踏み出せた人が大きな成果を</span>
+            </h2>
+            
+            <div class="offer-points bg-white rounded-3xl p-8 shadow-xl border-2 border-green-100">
+                <div class="point-list space-y-4 mb-8">
+                    <div class="point flex items-center gap-3">
+                        <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                        <p class="font-bold">参加無料・2分で登録完了</p>
+                    </div>
+                    <div class="point flex items-center gap-3">
+                        <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                        <p class="font-bold">オンラインだから気軽に参加できる</p>
+                    </div>
+                    <div class="point flex items-center gap-3">
+                        <i class="fas fa-gift text-yellow-500 text-xl"></i>
+                        <p class="font-bold">即日使える、選考対策シートプレゼント</p>
+                    </div>
+                </div>
+                
+                <!-- 特典画像 -->
+                <div class="bonus-images bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-6 mb-8 relative overflow-hidden">
+                    <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse">
+                        即日GET!
+                    </div>
+                    <p class="text-center font-bold mb-4 text-gray-800">
+                        <i class="fas fa-gift text-yellow-500"></i> 今だけの登録特典
+                    </p>
+                    <div class="sheet-preview relative">
+                        <img src="https://page.gensparksite.com/v1/base64_upload/3b4ceedd959a19ab6d1da547df35046e" 
+                             alt="選考対策シート" 
+                             class="w-full rounded-xl shadow-sm border border-gray-100 mb-4">
+                        <div class="text-center">
+                            <p class="text-lg font-black text-green-600 mb-2">
+                                <i class="fas fa-file-download text-green-500 mr-2"></i>
+                                選考対策シートを今すぐゲット！
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 最終CTA -->
+                <div class="final-cta text-center">
+                    <a href="#" class="cta-button inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-5 px-8 rounded-full text-xl shadow-xl transform transition hover:scale-105 w-full pulse-animation">
+                        <i class="fab fa-line mr-2"></i>
+                        今すぐLINEで登録する（無料）
+                    </a>
+                    <p class="text-xs text-gray-600 mt-4">
+                        ※LINEアプリが起動します<br>
+                        ※個人情報は厳重に管理いたします
+                    </p>
+                </div>
+            </div>
+            
+            <!-- 追い込みメッセージ -->
+            <div class="final-message bg-red-50 border-2 border-red-200 rounded-2xl p-6 mt-8">
+                <p class="text-center font-bold text-red-800">
+                    <i class="fas fa-clock text-red-600 mr-2"></i>
+                    今動かないと、一生後悔。<br>
+                    <span class="text-lg">年内の３ヶ月で差をつけよう。</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- フッター -->
+    <footer class="footer bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 max-w-lg text-center">
+            <p class="font-bold mb-2">キャリアスタディ</p>
+            <p class="text-sm text-gray-400">体育会系学生のための就活練習場</p>
+
+            <p class="text-xs text-gray-500 mt-4">© 2025 Career Study. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- フローティングCTAボタン（スマホ用） -->
+    <div class="floating-cta fixed bottom-4 left-4 right-4 z-50 md:hidden">
+        <a href="#" class="block bg-green-500 text-white font-bold py-4 px-6 rounded-full shadow-2xl text-center pulse-animation">
+            <i class="fab fa-line mr-2"></i>
+            LINE登録（無料）
+        </a>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

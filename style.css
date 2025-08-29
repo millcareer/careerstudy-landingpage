@@ -1,0 +1,308 @@
+/* カスタムCSS - キャリアスタディLP */
+
+/* フォント設定 */
+.font-noto {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* スムーズスクロール */
+html {
+    scroll-behavior: smooth;
+}
+
+/* セクション共通スタイル */
+section {
+    position: relative;
+}
+
+/* メインコピーのアニメーション */
+.main-copy {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CTAボタンのパルスアニメーション */
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+    }
+    50% {
+        box-shadow: 0 10px 35px rgba(34, 197, 94, 0.6);
+    }
+}
+
+/* CTAボタンホバー効果 */
+.cta-button {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.cta-button:hover:before {
+    width: 300px;
+    height: 300px;
+}
+
+/* 不安セクションのアイテム */
+.anxiety-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anxiety-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* フィーチャーカードのホバー効果 */
+.feature-card {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* 成功事例カードのアニメーション */
+.story-card {
+    transition: all 0.3s ease;
+}
+
+.story-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* LINE風メッセージのスタイル */
+.line-messages .message {
+    position: relative;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 理由カードのホバー効果 */
+.reason-card {
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.reason-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 書籍表示のアニメーション */
+.book {
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px) rotate(-2deg);
+}
+
+/* セクションタイトルのデコレーション */
+.section-title {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, #10b981, #22c55e);
+    border-radius: 2px;
+}
+
+/* 赤文字強調のアニメーション */
+.text-red-600 {
+    animation: redPulse 2s ease-in-out infinite;
+}
+
+@keyframes redPulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+}
+
+/* 成長サイクル図のアニメーション */
+.growth-cycle {
+    position: relative;
+}
+
+.growth-cycle .fas {
+    transition: transform 0.3s ease;
+}
+
+.growth-cycle:hover .fas {
+    transform: scale(1.2);
+}
+
+/* フローティングCTAの影 */
+.floating-cta {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 640px) {
+    .main-copy {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* スクロールアニメーション用クラス */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 対比写真のアニメーション */
+.photo-comparison {
+    animation: zoomIn 0.8s ease-out;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 信頼ポイントのアニメーション */
+.trust-points {
+    animation: fadeIn 1s ease-out 0.5s both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ボーナス画像のグロー効果 */
+.bonus-images {
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.2);
+}
+
+/* 最終メッセージの強調 */
+.final-message {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+/* カスタムスクロールバー */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #22c55e;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #16a34a;
+}
+
+/* ローディングアニメーション（必要に応じて） */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(34, 197, 94, 0.3);
+    border-radius: 50%;
+    border-top-color: #22c55e;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
